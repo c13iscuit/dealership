@@ -1,0 +1,9 @@
+<h1>Manufacturers Index</h1>
+
+<%= link_to 'Add a manufacturer!', new_manufacturer_path %>
+
+<ul>
+  <% @manufacturers.each do |manufacturer| %>
+    <li><%= "#{manufacturer.country} - #{manufacturer.name}" %></li>
+  <% end %>
+</ul>

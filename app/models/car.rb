@@ -1,4 +1,4 @@
-class Cars < ActiveRecord::Base
+class Car < ActiveRecord::Base
   belongs_to :manufacturer
 
   validates :color, presence: true

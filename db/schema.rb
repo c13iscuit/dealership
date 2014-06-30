@@ -11,17 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140630101613) do
+ActiveRecord::Schema.define(version: 20140630111836) do
 
   create_table "cars", force: true do |t|
-    t.integer "manufaturer_id", null: false
+    t.integer "manufacturer_id", null: false
     t.text    "description"
-    t.string  "color",          null: false
-    t.integer "year",           null: false
-    t.integer "mileage",        null: false
+    t.string  "color",           null: false
+    t.integer "year",            null: false
+    t.integer "mileage",         null: false
   end
 
-  create_table "dealerships", force: true do |t|
+  create_table "manufacturers", force: true do |t|
     t.string   "name",       null: false
     t.string   "country",    null: false
     t.datetime "created_at"

@@ -1,6 +1,7 @@
 <h1>Cars Index</h1>
 
-<%= link_to "Add a car!", new_car_path %>
+<p><%= link_to 'See all manufacturers', manufacturers_path%></p>
+<p><%= link_to 'Add a car!', new_car_path %></p>
 
 <ul>
 <% @cars.each do |car| %>
